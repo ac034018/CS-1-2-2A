@@ -1,0 +1,23 @@
+import random
+
+playList = ["Tomorrow is mine", "Lost in Japan", "Break my stride", "Back in the day", "The Ballad of Star Butterfly"]
+
+def jukeBox(playList):
+  song = random.choice(playList)
+  print("Playing", song)
+
+print("*****JUKEBOX*****")
+songChoice = input("Give me a song >>")
+if songChoice== "Tomorrow is mine":
+  print("Playing", songChoice)
+if songChoice == "Lost in Japan":
+  print("Playing", songChoice)
+if songChoice == "Break my stride":
+  print("Playing", songChoice)
+if songChoice == "Back in the day":
+  print("Playing", songChoice)
+if songChoice == "The Ballad of Star Butterfly":
+  print("Playing", songChoice)
+else:
+  print("I don't have that song. Playing a random song. . . ")
+  jukeBox(playList)
