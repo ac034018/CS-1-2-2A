@@ -1,0 +1,13 @@
+import random
+months = ["January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"]
+print("Think of a month and I'll try to guess it.")
+
+keepGuessing = True
+while keepGuessing:
+  guess = random.choice(months) 
+  answer = (input("Is it ", guess , "(Y or N)? >>"))
+  if answer == ("Y"):
+    print("I guessed it!")
+    keepGuessing = False
+  else:
+    months.remove(guess)
