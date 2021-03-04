@@ -1,0 +1,6 @@
+#M3th0D M4n
+
+def doubler():
+  a = 4
+  print(a * 2)
+doubler ()
