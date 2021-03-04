@@ -1,0 +1,16 @@
+import random
+numbers = [1,2,3,4,5,6]
+rollNum = 0
+roll = rollNum
+rolling = True
+while rolling:
+  numberOne = random.choice(numbers)
+  numberTwo = random.choice(numbers)
+  roll = print("Roll:",numberOne, numberTwo)
+  rollNum += 1
+  answer = numberOne + numberTwo
+  if answer== 7:
+    print("Nailed it in",rollNum,"rolls")
+    rolling = False
+  else:
+    rolling = True
