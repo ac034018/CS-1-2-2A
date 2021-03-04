@@ -1,0 +1,50 @@
+import random
+import time 
+print("*** RPS ***")
+print("INSTRUCTIONS: Enter your throw (r , p , s or q)")
+rps = ["r", "p", "s"]
+userScore= 0
+cpuScore= 0
+running = True 
+while(running):
+  start = time.time()
+  userThrow = input(">> ")
+  end = time.time()
+  elapsed= end - start
+  if elapsed > 10:
+    print("You took too long!")
+    userThrow = "q"
+  cpuThrow = random.choice(rps)
+  print(cpuThrow)
+  if userThrow == "r":
+    if cpuThrow == "r":
+      print("Rock tie!")
+    elif cpuThrow =="p":
+      print("Paper beats rock, you lose!")
+      cpuScore += 1
+    elif cpuThrow =="s":
+      print("Rock beats scissors, you win!")
+      userScore += 1
+  elif userThrow == "p":
+    if cpuThrow == "r":
+      print("Paper beats rock, you win!")
+      userScore += 1
+    elif cpuThrow == "p":
+      print("Paper tie!") 
+    elif cpuThrow == "s":
+      print("Scissors beat paper, you lose!")
+      cpuScore += 1
+  elif userThrow == "s":
+    if cpuThrow == "r":
+      print("You Lose!")
+      cpuScore += 1
+    elif cpuThrow == "s":
+      print("Tie!")
+    elif cpuThrow == "p":
+      print("You win!")
+      userScore += 1
+  elif userThrow == "q":
+    running = False
+  else:
+    print("Try again!")
+print("User score:", userScore, "Cpu score:", cpuScore)
