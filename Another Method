@@ -1,0 +1,21 @@
+#M3th0d M4n
+
+answer= "gray"
+
+def storeGuess(str):
+  return input(str)
+
+def guessedWrong():
+  print("Guess again!")
+
+def guessedRight():
+  print("You guessed it!")
+  return False
+
+running = True
+while running:
+  guess = storeGuess("Pick a Color >> ")
+  if guess == answer:
+   running = guessedRight()
+  else:
+   guessedWrong()
