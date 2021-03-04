@@ -1,0 +1,5 @@
+def stringSmasher():
+  str1 = input("string 1 >>")
+  str2 = input("string 2 >>")
+  string =(str1 + str2)
+  print(string)
