@@ -1,0 +1,45 @@
+def datingApp(day, month, year):
+  if month == ("January"):
+    if day >= 0 and day <= 31:
+      print("You were born on:", month, day , year)
+  elif month == ("February "):
+    if day >= 0 and day <= 28:
+      print("You were born on:", month, day , year)
+  elif month == ("March"):
+    if day >= 0 and day <= 31:
+     print("You were born on:", month, day , year)
+  elif month == ("April"):
+    if day >= 0 and day <= 30:
+     print("You were born on:", month, day , year)
+  elif month == ("May"):
+    if day >= 0 and day <= 31:
+      print("You were born on:", month, day, year)
+  elif month == ("June"):
+    if day >= 0 and day <= 30:
+     print("You were born on:", month, day , year)
+  elif month == ("July"):
+    if day >= 0 and day <= 31:
+     print("You were born on:", month, day , year)
+  elif month == ("August"):
+   if day >= 0 and day <= 31:
+     print("You were born on:", month, day , year)
+  elif month == ("September"):
+    if day >= 0 and day <= 30:
+     print("You were born on:", month, day , year)
+  elif month == ("October"):
+    if day >= 0 and day <= 31:
+     ("You were born on:", month, day , year)
+  elif month == ("November"):
+    if day >= 0 and day<= 30:
+     print("You were born on:", month, day , year)
+  elif month == ("December"):
+    if day >= 0 and day <= 31:
+     print("You were born on:", month, day , year)
+  else:
+    print("Invalid input, try again!")
+
+day = int(input("Birth Day >> "))
+month = input("Birth Month >> ")
+year = int(input("Birth Year >> "))
+
+datingApp(day, month, year)
