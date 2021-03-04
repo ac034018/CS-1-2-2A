@@ -1,0 +1,14 @@
+import random
+print("Guess the color!")
+
+colorChoice = ["Red", "Orange" ,"Yellow" ,"Green" ,"Blue" ,"Purple"]
+
+running=True
+while(running):
+ cpuChoice= random.choice(colorChoice)
+ userGuess = input(">> ")
+ if userGuess == cpuChoice:
+   print("You Guessed it!")
+   running=False 
+ else:
+   print("Try again!")
