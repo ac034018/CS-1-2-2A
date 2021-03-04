@@ -1,0 +1,9 @@
+import random
+
+playList = ["Fly in the freedom","My sweet passion","Green hill zone "]
+
+def jukeBox(playList):
+  song = random.choice(playList)
+  print("Playing", song)
+
+jukeBox(playList)
