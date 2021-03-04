@@ -1,0 +1,11 @@
+import random
+
+def coinToss():
+ toss = random.randrange(0,2)
+ if toss == 0:
+   print("Heads")
+ elif toss == 1:
+   print("Tails")
+
+while True:
+ coinToss()
