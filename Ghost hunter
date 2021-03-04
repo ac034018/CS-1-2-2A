@@ -1,0 +1,16 @@
+print("FIND THE GHOST IN THE HIDDEN FOREST! GUESS 0, 1, or 2 for ROW, Guess 0, 1, or 2 for COL")
+forest = [["*","*","*"],
+          ["*","G","*"],
+          ["*","*","*"]
+]
+keepLooking = True
+while keepLooking:
+  guess = input("Where is the Ghost? >>")
+  if guess == ("11"):
+    print("You found it!")
+    for row in forest:
+      print(row)
+    keepLooking = False
+  else:
+    print("Keep guessing ....")
+    keepLooking = True
