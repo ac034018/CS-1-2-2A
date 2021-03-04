@@ -1,0 +1,24 @@
+import random 
+
+print("Player health: 12")
+player_health = 12
+print("Enemy health: 12")
+enemy_health= 12
+
+running=True
+while(running):
+  player_attack= random.randint(3,6)
+  print ("Player deals", (player_attack))
+  enemy_health -= player_attack
+  print ("Enemy health is now", (enemy_health))
+  if enemy_health <=0:
+    break
+
+  enemy_attack= random.randint(3,6)
+  print ("Enemy deals", (enemy_attack))
+  player_health -= enemy_attack
+  print ("Player health is now", (player_health))
+  if player_health <=0:
+   break
+print ("Player health is:",(player_health))
+print ("Enemy health is:" ,(enemy_health))
