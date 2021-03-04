@@ -1,0 +1,12 @@
+print("FIND THE GHOST IN THE HIDDEN FOREST! GUESS 0, 1, or 2")
+forest = ["*","G","*"]
+keepLooking = True
+while keepLooking:
+  guess = input("Where is the Ghost? >>")
+  if guess == ("1"):
+    print("You found it!")
+    print("['*','G','*']")
+    keepLooking = False
+  else:
+    print("Keep guessing ....")
+    keepLooking = True
