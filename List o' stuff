@@ -1,0 +1,6 @@
+import random
+rps = ["r", "p", "s"]
+print(rps)
+
+cpuThrow = random.choice(rps)
+print(cpuThrow)
