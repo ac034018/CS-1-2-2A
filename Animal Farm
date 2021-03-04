@@ -1,0 +1,16 @@
+
+def animalFarm(num, animal):
+ if animal == ("Cow"):
+   noise = ("moo ")
+ elif animal == ("Pig"):
+   noise =("oink ")
+ elif animal == ("Duck"):
+   noise = ("quack ")
+ else:
+   print("I don't have that sound")
+   noise= " " + input("Enter new animal sound >>")
+ print (noise * num)
+num = int(input("Num Times >>")) 
+animal = input("Animal >>")
+
+animalFarm(num,animal)
