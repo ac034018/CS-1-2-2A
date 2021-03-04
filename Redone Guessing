@@ -1,0 +1,15 @@
+'''
+The goal of this game is to find out what the computer is guessing on 3 sweet food, see if you can get it right!
+'''
+print("Guess the sweet food!")
+#Here is where the variables are
+import random
+sweetFood=["cake","ice cream","candy"]
+
+
+cpuAnswer = random.choice(sweetFood)
+userGuess = input("")
+if userGuess == cpuAnswer:
+ print("You got it right!")
+else :
+ print("Try again, you were close!")
