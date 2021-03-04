@@ -1,0 +1,9 @@
+import time 
+
+start = time.time()
+throw =  input(">> ")
+end = time.time()
+elapsed = end - start
+if elapsed > 10:
+  print("You're too slow!")
+print(elapsed )
